@@ -82,10 +82,10 @@ canvas.addEventListener('mousemove', (evt) => {
   let y = Math.floor(evt.y / scl)
 
   if (click) {
-    for (let i = -4; i < 4; i++) {
-      for (let j = -4; j < 4; j++) {
+    for (let i = -2; i < 2; i++) {
+      for (let j = -2; j < 2; j++) {
         if (grid[i][j] != null) {
-          grid[(y + i) - 2][(x + j) - 2] = wall ? -1 : hue
+          grid[(y + i)][(x + j)] = wall ? -1 : hue
         }
       }
     }
