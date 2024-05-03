@@ -1,7 +1,7 @@
 const canvas = document.querySelector('canvas')
 
-canvas.width = innerWidth - 15
-canvas.height = innerHeight - 15
+canvas.width = outerWidth
+canvas.height = outerWidth
 
 const scl = 3
 const row = Math.floor(canvas.width / scl)
