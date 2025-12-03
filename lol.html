@@ -1,14 +1,18 @@
-<h1>Sorry, you are now COOKED</h1>
-by pugorutori
+<body>
+  <h1>Sorry, you are now COOKED</h1>
+  by pugorutori
+</body>
+
 <script>
   function bomb(){
     while (true){
+    setTimeout(() => {}, 2);
       const e = document.createElement("div");
       e.textContent = "BAM!";
       document.body.appendChild(e);
-
     }
   }
+  setTimeout(() => {}, 500);
   // Welp dat sucks
     bomb()
 </script>
