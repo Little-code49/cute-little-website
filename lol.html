@@ -10,7 +10,7 @@
       const e = document.createElement("span");
       e.textContent = "💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥";
       document.body.appendChild(e);
-      setTimeout(bomb, 0);
+     Promise.resolve().then(bomb);
     }
   bomb()
 </script>
