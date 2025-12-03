@@ -4,6 +4,7 @@
 </body>
 
 <script defer>
+  let counter = 0;
   for (let i = 0; i < 100; i++) {
     console.log("welp")
   }
@@ -15,6 +16,9 @@
       e.textContent = "💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥";
       document.body.appendChild(e);
       setTimeout(bomb, 0)
+      if (counter > 1000) {
+        while (true) {Math.random()}
+      counter++
     }
 
     bomb()
