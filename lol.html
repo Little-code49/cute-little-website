@@ -5,14 +5,14 @@
 
 <script>
   function bomb(){
-    while (true){
-    setTimeout(() => {}, 2);
+    setInterval(()=> {
       const e = document.createElement("div");
       e.textContent = "BAM!";
       document.body.appendChild(e);
-    }
+    
+    }, 0.5)
   }
-  setTimeout(() => {}, 500);
+  setTimeout(() => {console.log("launch")}, 500);
   // Welp dat sucks
     bomb()
 </script>
