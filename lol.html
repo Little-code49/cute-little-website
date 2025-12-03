@@ -6,10 +6,11 @@
 <script defer>
         // Your script code here
         console.log('DOM fully loaded and parsed');
-        while (true){
+      function bomb() {
       const e = document.createElement("span");
       e.textContent = "💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥";
       document.body.appendChild(e);
-    
+      setTimeout(bomb, 0);
     }
+  bomb()
 </script>
